@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_height"
+    android:padding="@dimen/padding_small">
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="@dimen/list_image_width"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        tools:src="@drawable/placeholder" />
+
+    <TextView
+        android:id="@+id/news_title_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_normal"
+        android:layout_toRightOf="@+id/image_view"
+        android:ellipsize="end"
+        android:fontFamily="serif"
+        android:maxLines="2"
+        android:textColor="@android:color/black"
+        tools:text="France holds state funeral for police hero of Trèbes siege" />
+
+    <TextView
+        android:id="@+id/time_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/details_view"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/news_title_view"
+        android:layout_marginTop="@dimen/padding_small"
+        android:fontFamily="serif"
+        android:textSize="@dimen/small_text"
+        tools:text="10:29:27Z" />
+
+    <LinearLayout
+        android:id="@+id/details_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/padding_normal"
+        android:layout_toRightOf="@+id/image_view"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/date_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:textSize="@dimen/normal_text"
+            tools:text="2018-03-28" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/padding_small"
+            android:layout_marginRight="@dimen/padding_small"
+            android:background="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/section_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="@dimen/normal_text"
+            tools:text="World News" />
+    </LinearLayout>
+</RelativeLayout>

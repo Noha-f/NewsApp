@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="list_item_height">100dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="list_image_width">120dp</dimen>
+    <dimen name="padding_normal">16dp</dimen>
+    <dimen name="small_text">10sp</dimen>
+    <dimen name="normal_text">12sp</dimen>
+    <dimen name="large_text">20sp</dimen>
+    <dimen name="margin">10dp</dimen>
+</resources>
